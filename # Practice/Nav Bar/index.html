@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        nav {
+            width: 100%;
+            height: 50px;
+            background-color: chocolate;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        ul {
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+            margin-left: 50px;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .search-bar {
+            margin-right: 50px;
+        }
+
+        input[type="text"] {
+            height: 27px;
+            border-radius: 5px;
+            border: 0px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            height: 27px;
+            width: 70px;
+            border-radius: 5px;
+            border: 0;
+            font-size: 13px;
+            color: black;
+            background-color: orange;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        ul li:hover{
+            transform: rotate(360deg);
+            transition: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">projects</a></li>
+            <li><a href="">downloads</a></li>
+            <li><a href="">contacts</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+        <div class="search-bar">
+            <form>
+                <input type="text">
+                <input type="submit" name="submit" value="submit">
+            </form>
+        </div>
+    </nav>
+</body>
+
+</html>

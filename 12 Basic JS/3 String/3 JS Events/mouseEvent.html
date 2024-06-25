@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;
+            font-size: 18px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #block{
+            width: 200px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            padding: 5px;
+     
+        }
+    </style>
+</head>
+<body>
+    <div id="block" ondblclick="onDoubleClick();" onmouseover="changeFontSize(); changeColor();" onmouseout="resetColor(); resetFontSize();">
+        Double click me
+    </div>
+    <button onclick="onLeftClick();" oncontextmenu="onRightClick();" >Click Me</button>
+
+
+    <script>
+        function onLeftClick(){ alert("Left clicked");}
+        function onRightClick() { alert("Right clicked");}
+        function onDoubleClick() { alert("Double clicked");}
+
+        function changeFontSize(){
+            document.getElementById("block").style.fontSize = "22px";
+        }
+
+        function changeColor(){
+            document.getElementById("block").style.color = "red";
+        }
+
+        function resetFontSize(){
+            document.getElementById("block").style.fontSize = "18px";
+        }
+
+        function resetColor(){
+            document.getElementById("block").style.color = "white";
+        }
+
+
+
+    </script>
+
+
+</body>
+</html>

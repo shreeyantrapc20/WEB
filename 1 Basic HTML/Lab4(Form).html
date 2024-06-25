@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Html forms</title>
+</head>
+<body>
+	<form>
+	<fieldset>
+	<legend>Admission form</legend>
+
+	<label for ="name">Name: </label>
+	<input type="text" name="name" placeholder="Name" id="name" pattern="[A-Za-z]{10}"> <br><br>
+
+
+	<label for ="pass">Password: </label>
+	<input type="password" placeholder="Password" id="pass"> <br><br>
+
+	<label for="address">Address: </label>
+	<input type="text" name="address" id="address" placeholder="Address"><br><br>
+	
+	<label for="phone">Phone number: </label>
+	<input type="text" name="phone" id="phone" placeholder="98xxxxxxxx" pattern="[0-9]{10}"><br><br>
+
+	<label for="gender">Gender: </label>
+	<input type="radio" name="gender" value="male">Male
+	<input type="radio" name="gender" value="female">Female
+	<input type="radio" name="gender" value="other">Other<br><br>
+
+	<label for="dob">Date of birth:</label>
+	<input type="date" name="date" id="dob"><br><br>
+
+	<label for="dob2">Date of birth:</label>
+	<input type="datetime-local" id="dob2"><br><br>
+
+	<label for="time">Time</label>
+	<input type="time" id="dob2"><br><br>
+	
+	<label for="age">Age</label>
+	<input type="number" max=100 min=1 id="age"><br><br>
+
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email"><br>
+	<br>
+	<label for="course">Choose your course: </label>
+	<input type="checkbox" name="php" value="php">PHP
+	<input type="checkbox" name="java" value="java">JAVA
+	<input type="checkbox" name="python" value="python">PYTHON<br><br>
+	
+	<label for="country">Choose your country</label>
+	<select>
+		<option value="">Select country</option>
+		<option value="nepal">Nepal</option>
+		<option value="ned">Netherlands</option>
+		<option value="sl">Sri Lanka</option>
+		<option value="ban">Bangladesh</option>
+		<option value="sa">South Africa</option>
+	</select><br><br>
+	
+	<label for="photo">Upload your pp size photo </label>
+	<input type="file" accept="image/*" id="photo"><br><br>
+	
+	<label for="website">Website</label>
+	<input type="url" id="website"><br><br>
+
+	<label for="color">Colour</label>
+	<input type="color" id="color"><br><br>
+
+	<label for="range">Price range</label>
+	<input type="range" id="range" max="1000" min="100"><br><br>
+
+	<label for="search">Search: </label>
+	<input type="search" id="search"><br><br>
+
+	
+	<label for="cmnt">Write something about your training </label>
+	<textarea></textarea><br><br>
+
+	<input type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<input type="reset" value="Reset">
+
+
+	</fieldset>
+	</form>
+</body>
+</html>

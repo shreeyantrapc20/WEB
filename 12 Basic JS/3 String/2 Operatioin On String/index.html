@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result{
+            width: 500px;
+            height: 500px;
+            border: 1px solid black;
+            background-color: rgb(139, 92, 92);
+            color: white;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    
+        <div id="result">
+            <marquee>
+        <p id="one"></p><hr>
+        <p id="two"></p><hr>
+        <p id="three"></p>
+        <p id="four"></p>
+        <hr>
+        <p id="five"></p><hr>
+        <p id="six"></p><hr>
+        <p id="seven"></p><hr>
+    </marquee>
+    </div>
+
+
+    <script>
+
+        // find the length of the given string
+
+        var str = "This is a javascript lab";
+        var strlength = str.length;
+        document.getElementById("one").innerHTML = "The length of string is "+strlength;
+
+        // find the position of suubstring of given string
+
+        var string2 = "This is the javascript lab. we are studying javascript";
+        var pos = string2.indexOf("javascript");
+        document.getElementById("two").innerHTML = "The position of word \"javascript\" is "+pos;
+
+        // extract the substring of a given string
+        // slice(startIndex, endIndex)
+        
+        var extract = string2.slice(4, 35);
+        document.getElementById("three").innerHTML = "The substring is \""+extract+"\"";
+
+        // substr(sartIndex, length)
+        var extract2 = string2.substr(4, 35);
+        document.getElementById("four").innerHTML = "The substring is \""+extract2+"\"";
+
+        // replace()
+        var replaced = string2.replace("javascript", "Web Dev");
+        document.getElementById("five").innerHTML = replaced;
+
+        document.getElementById("six").innerHTML = string2.toUpperCase();
+        document.getElementById("seven").innerHTML = string2.toLowerCase();
+
+
+    </script>
+
+</body>
+</html>

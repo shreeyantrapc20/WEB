@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+}
+.text-container{
+    width:45%;
+    height: 400px;
+    margin:10px;
+    padding:10px;
+    border: 1px solid black;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    color:goldenrod;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-shadow: 3px 3px 2px black;
+}
+p{
+    margin-top: 10px;
+    padding: 10px;
+}
+.para1{
+    word-spacing: 20px;
+}
+.para2{
+    line-height: 2;
+    text-indent: 40px;
+}
+.undline{
+    text-decoration: underline;
+}
+.ovrline{
+    text-decoration: overline;
+}
+.linethr{
+    text-decoration: line-through dotted blue;
+}
+.gridcontainer{
+    height: 800px;
+    width: 800px;
+    border: 1px solid black;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.white{
+    background-color: beige;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+.black{
+    background-color: rgb(73, 72, 72);
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
