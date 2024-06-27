@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
     <p class="text">This is first paragraph</p>
@@ -15,6 +18,10 @@
         match[0].style.background = "red";
         match[match.length-1].style.background = "green";
         match[1].style.background = "cyan";
+        var a;
+        for(a in match) {
+            match[a].style.color = "white";
+        }
     </script>
 </body>
 </html>
