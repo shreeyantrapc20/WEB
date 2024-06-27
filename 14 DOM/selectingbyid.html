@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Selecting element by id</title>
+</head>
+<body>
+    <p id="para">This is a sample content</p>
+    <script>
+        var text=document.getElementById("para");
+        text.style.background="red";
+        text.style.color="white";
+        text.style.fontSize="50px";
+    </script>
+
+    <!--Selecting element by class-->
+    <p class="text"> This is a sample content </p>
+    <p class="text"> This is another sample content </p>
+    <div class="text"> This is a sample content </div>
+    <div class="text"> This is a sample content </div>
+    <div class="text"> This is a sample content </div>
+    <div class="text"> This is a sample content </div>
+    <div class="text"> This is a sample content </div>
+    <div class="text"> This is a sample content </div>
+    <div class="text"> This is a sample content </div>
+    <div class="text"> This is a sample content </div>
+    <div class="text"> This is a sample content </div>
+    <script>
+        var match=document.getElementsByClassName("text");
+        match[0].style.background="yellow";
+        match[0].style.fontSize="50px"
+
+        match[1].style.background="blue";
+        match[2].style.background="Green";
+        
+        match[match.length-1].style.color="red"
+    </script>
+</body>
+</html>
