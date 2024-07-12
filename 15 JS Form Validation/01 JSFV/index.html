@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-container {
+            height: 100vh;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .error, .form {
+            width: 300px;
+            padding: 10px;
+        }
+
+        .form {
+            background-color: aquamarine;
+            
+        }
+
+        .error {
+            background-color: rgb(245, 125, 125);
+            display: none;
+        }
+
+        input[type="text"], input[type="password"], input[type="submit"] {
+            width: 100%;
+            height: 22px;
+        }
+
+        input[type="submit"] {
+            margin-top: 30px;
+            height: 30px;
+        }
+
+        label {
+           margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <div class="form-container">
+        <div class="error" id="error">
+            <span id="errmsg">Error</span>
+        </div>
+        <div class="form">
+            <form onsubmit="return validate()">
+
+                <label for="usr">Username</label>
+                <input type="text" id="usr">
+        
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass">
+        
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone">
+                
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" id="gender"> Male
+                <input type="radio" name="gender" id="gender"> Female
+                <input type="submit" value="Submit" onclick="displayError()">
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
