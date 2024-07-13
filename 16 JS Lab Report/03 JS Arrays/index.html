@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //creating an array
+        var proSet1 = ["Koshi", "Madhesh", "Bagmati"];
+        var proSet2 = ["Lumbini", "Gandaki", "Sudurpaschim", "Karnali"];
+
+        //accessing array elements
+        document.write(proSet1[0]+"<br>");
+        document.write(proSet2+"<br>");
+
+        //concatinate arrays
+        var province = proSet1.concat(proSet2);
+
+        //array length
+        var len = province.length;
+        
+        for (let i = 0; i < len; i++) {
+            
+            document.write(province[i]+" ");
+            
+        }
+
+        //array join - returns string containing all array elements
+        var proJoinStr = province.join(", ");
+        document.write("<br>proJoinStr = "+proJoinStr);
+
+        var num = [2,4,6,8];
+
+        //push - adds element at last index
+        num.push(10);
+        num.push(12);
+        document.write("<br>"+num);
+
+        //pop - removes last element
+        num.pop();
+        document.write("<br>"+num);
+
+        //shift - removes first element and returns that element
+        document.write("<br>"+num.shift());
+
+        //unshift - add elements at front and returns new length of array
+        document.write("<br>"+num.unshift(20))
+
+        //indexOf
+        document.write("<br>"+province.indexOf("Gandaki"))
+
+        //reverse
+        document.write("<br>"+num.reverse());
+
+        //sort
+        document.write("<br>"+province.sort())
+
+        
+
+
+    </script>
+</body>
+</html>

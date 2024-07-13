@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var string = "This is a string!";
+
+        //length
+        document.write(string.length);
+
+        //charAt
+        document.write("<br>The charAt(8) is: "+string.charAt(8));
+
+        //concat
+        var string2 = "I scream, you scream, we all scream for Ice-cream";
+        document.write("<br>"+string.concat(string2));
+
+        //indexOf
+        document.write("<br>"+string.indexOf("s"))
+
+        //lastindexOf
+        document.write("<br>"+string.lastIndexOf("s"));
+
+        //match - used to match a regular expression against a string
+        document.write("<br>"+string2.match(/eam/gi));
+
+        //replace
+        document.write("<br>"+string.replace("string","Javascript"));
+
+        //slice(start,end)
+        document.write("<br>"+string.slice(4,14));
+
+        //split - convert string to array
+        document.write("<br>"+string.split(" "));
+
+        //substr(start, length)
+        document.write("<br>"+string.substr(2, 9));
+
+        //substring(start, end)
+        document.write("<br>"+string.substring(5, 15));
+
+        //toUpperCase
+        document.write("<br>"+string.toUpperCase());
+
+        //toLowerCase
+        document.write("<br>"+string2.toLowerCase());
+
+
+
+
+    </script>
+</body>
+</html>

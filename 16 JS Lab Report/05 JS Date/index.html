@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //creating date object
+        const date = new Date();
+
+        //printing date object
+        document.write(date);
+
+        //getFullYear
+        document.write("<br>"+date.getFullYear());
+
+        //getMonth
+        var m = date.getMonth() + 1;
+        document.write("<br>"+m);
+
+        //getDate
+        document.write("<br>"+date.getDate())
+
+        //getDay
+        var d = date.getDay() + 1;
+        document.write("<br>"+d)
+
+        //get time
+        document.write("<br>"+date.getHours()+":"+date.getMinutes()+":"+date.getSeconds())
+
+        //set
+        var newDate = new Date("April 29, 2067 12:34:56");
+        document.write("<br>"+newDate)
+
+        newDate.setFullYear(2090)
+        document.write("<br>"+newDate)
+
+        newDate.setHours(20, 45, 12)
+        document.write("<br>"+newDate)
+
+        var dStr = newDate.toDateString()
+        document.write("<br>"+dStr)
+
+        var tStr = date.toTimeString()
+        document.write("<br>"+tStr)
+    </script>
+</body>
+</html>
