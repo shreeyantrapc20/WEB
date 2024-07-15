@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1">
+        Name <input type="text" name="name" id="name">
+        Age <input type="number" name="age" id="age">
+        Gender <input type="radio" name="gen" id="male">Male 
+                <input type="radio" name="gen" id="female">Female 
+                <input type="button" value="Send" onclick="showOutput()">
+                <p id="showOutput"></p>
+    </form>
+    <script>
+        
+        function showOutput() {
+            //get element by id
+            var name = document.getElementById("name").value;
+            //get element by name
+            var gen = document.getElementsByName("gen");
+            var total = 0;
+            //get value using document object
+            var age = document.form1.age.value;
+
+            for(let i = 0; i<gen.length; i++) {
+                total++;
+            }
+
+            //innerHTML
+           document.getElementById("showOutput").innerHTML = name + total + age ;
+        }
+    </script>
+</body>
+</html>

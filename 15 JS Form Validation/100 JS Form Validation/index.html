@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        
+        <h1>Register</h1>
+
+        <div id="errmsg">
+            <span id="msg"></span>
+            <div class="img"><img src="remove.png" onclick="removeBox()"></div>
+        </div>
+
+        <form onsubmit="return validateForm()">
+
+            <label for="uname">Username</label>
+            <input type="text" id="uname">
+            <label for="pass">Password</label>
+            <input type="password"  id="pass">
+            <label for="phone">Contact Number</label>
+            <input type="text" id="phone">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+
+            <div class="gen-radio">
+            Gender &nbsp;&nbsp;
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="fema" value="female">
+            <label for="fema">Female</label>
+            </div>
+
+            <label for="faculty">Faculty</label>
+            <select id="course" name="course">
+                <option value="select" selected>Select Faculty</option>
+                <option value="bsccsit">BSC.CSIT</option>
+                <option value="bim">BIM</option>
+                <option value="other">Others</option>
+            </select> <br><br>
+            
+            <input type="checkbox" name="declaration" id="trueinfo">
+            <label for="trueinfo">All the provided information are true.</label>
+            <br>
+            <input type="checkbox" name="terms" id="terms">
+            <label for="terms">I accept the terms and conditions.</label>
+            <br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //creating an object
+         var bus = {
+            route: "kvt-to-brt",
+            dist: 117,
+            time: "02:45"
+         }
+
+         //accessing object properties
+         document.write("The bus route is: "+bus.route+"<br>");
+         document.write("Bus covers "+bus["dist"]+" km to reach destination<br>");
+
+         //adding new properties
+         bus.firstStop = "damak";
+         document.write("The first bus stop is at "+bus.firstStop+"<br>");
+
+         //deleting properties
+         delete bus.time;
+         for(var key in bus) {
+            document.write("["+key+": "+bus[key]+"] ");
+         }
+
+    </script>
+</body>
+</html>
