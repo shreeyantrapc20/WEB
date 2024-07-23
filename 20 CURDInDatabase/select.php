@@ -4,7 +4,7 @@
     $result = $connection->query($sql);
     if($result->num_rows>0) {
         echo "
-        <table border=2>
+        <table border=1 cellpadding=10 cellspacing=0>
         <tr>
         <th>ID</th>
         <th>Fname</th>
@@ -25,6 +25,7 @@
             <td>{$row['dob']}</td>
             <td>{$row['phone']}</td>
             <td>{$row['addr']}</td>
+            <td><a href=' edit.php?id=".$row['sid']." '>Edit</a></td>
             </tr>";
         }
         echo "</table>";
