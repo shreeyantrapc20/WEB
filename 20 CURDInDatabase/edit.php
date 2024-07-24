@@ -11,7 +11,7 @@ if(isset($_GET['id'])) {
 
 
 <form action="update.php" method="POST" >
-
+<input type="hidden" name="sid" value="<?php echo $row['sid'] ?>"> <br><br>
 <label for="username">Firstname</label>
 <input type="text" name="usrname" value="<?php echo $row['fname'] ?>"> <br><br>
 <label for="lname">Lastname</label>
@@ -24,8 +24,8 @@ if(isset($_GET['id'])) {
 <input type="text" name="phone" id="phone" value="<?php echo $row['phone'] ?>"><br><br>
 <label for="addr">Address</label>
 <input type="text" name="addr" id="addr" value="<?php echo $row['addr'] ?>"><br><br>
-<input type="submit" value="Submit">
-<button type="button"><a href="select.php">View Data</a></button>
+<input type="submit" value="Update">
+<!-- <button type="button"><a href="select.php">View Data</a></button> -->
 
 
 </form>
