@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed laboriosam unde earum consequatur inventore corporis placeat nobis, deleniti tenetur? Quaerat illo similique ex temporibus doloribus sed veniam officia qui quae ullam totam soluta aspernatur ipsa labore debitis praesentium sint repudiandae, accusamus in dignissimos. Temporibus numquam doloremque rerum? Asperiores nostrum aliquid officiis? Voluptatum, autem soluta enim voluptates blanditiis deserunt illum molestias culpa facilis laudantium, consequuntur accusantium suscipit quod eum nisi cupiditate dolor nostrum at? Quibusdam architecto unde ullam dolorem cum quasi commodi reprehenderit odit pariatur dicta exercitationem, sapiente quisquam voluptatem quis rem labore sequi fuga similique consectetur ut excepturi optio possimus harum vel. Exercitationem, odit amet necessitatibus voluptatibus asperiores laborum ullam repellendus totam sapiente veniam rem, delectus cum tempore laudantium voluptates obcaecati reiciendis temporibus eaque pariatur nemo minima fugit ea fuga. Ipsum numquam porro voluptatem sapiente? Vel ad dolores nostrum, mollitia animi saepe quasi eveniet laudantium maiores fugit, voluptates cumque repudiandae in dolorum dignissimos ex vero sint. Officia nihil totam autem optio inventore expedita. Vitae molestiae quaerat cum eius? Eaque vitae laboriosam at expedita commodi, minima repellendus voluptatum explicabo! Et facilis iusto dolor, quasi fuga molestiae sequi non reiciendis corporis laboriosam vitae doloribus eligendi labore, temporibus, cumque autem aliquid perferendis quibusdam! Sit omnis quasi ex accusantium alias ea voluptatibus numquam quos sed hic possimus asperiores, inventore illo eveniet consequatur sunt tempora laudantium delectus error odio optio expedita quis distinctio minima? Veniam distinctio dolores libero cumque harum dolore, voluptatem, id, nihil recusandae non a? Vero repellat provident officiis voluptatem, delectus asperiores sequi ratione laboriosam ullam architecto nulla explicabo, amet nostrum dolores consequuntur. Praesentium dignissimos dolore incidunt iusto necessitatibus itaque, ab rem temporibus minus et? Quae optio sed, voluptates quam blanditiis reprehenderit cum dolor non, totam ullam esse atque vero excepturi ipsum a repellendus obcaecati velit! Repellat ullam quisquam quaerat iste excepturi culpa, accusantium iusto, eos assumenda dolorem veniam laudantium. Natus at cum vero autem, asperiores incidunt illum hic, velit quia nemo corporis numquam corrupti temporibus placeat impedit accusantium nobis est dignissimos tenetur reiciendis, necessitatibus dolorem. Reprehenderit, facilis rem natus vero nostrum temporibus at, dolorem magni possimus voluptatibus suscipit asperiores eum eos placeat molestiae voluptas architecto! Eaque quam laborum aperiam nam eligendi hic quos saepe, quae voluptas perspiciatis? Error doloribus corporis eveniet quasi. Error delectus natus expedita fuga laborum voluptas velit, distinctio molestias hic? Ea, laudantium illo. Omnis ab praesentium, ea distinctio adipisci, rem accusantium ipsam eveniet, quia molestias officia quibusdam dolor. Accusantium, saepe. Explicabo eum voluptatibus voluptas a eligendi quos, nemo iusto, dolores, ea labore nesciunt alias quasi sapiente fugit minus optio exercitationem earum veritatis! Ratione consequuntur, repudiandae ipsam esse recusandae dolorem iusto aliquid laboriosam quam nam facilis dolores neque dignissimos dolorum explicabo mollitia non eveniet sunt eligendi aspernatur cupiditate doloribus vel! Iste, quod ea ab doloribus ipsum, placeat sed unde obcaecati laboriosam ratione atque autem quisquam, beatae reprehenderit quos ex. Nostrum, minus fuga dolore impedit fugit dolorem expedita, earum at error ab reprehenderit suscipit eligendi doloribus enim! Deleniti temporibus aliquid, officiis a culpa sunt, facilis fugiat tenetur, commodi eligendi odio illo.</p>
+
+    <input type="text" placeholder="Type something" id="ip">
+    <button id="btn">Hide Paragraph</button>
+    <button class="btnc">Show Paragraph</button>
+    
+
+
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            //this loads the jquery function after the document is fully loaded
+            //$ => it grants access to jquery
+
+            //jquery selectors
+            // 1. $('p') => element selector
+            //2. $('#id') => id selector
+            //3. $('.class') => class selector
+
+            //jquery syntax
+            // $(selector).action()
+
+            //Events
+            //Mouse -> click, dblclick, mouseenter, mouseleave
+            //keyboard -> keypress, keyup, keydown
+            //form -> submit, change, focus. blur
+            //document/window -> load. resize, scroll, unload
+
+            //effects
+            //hide, show, fade, slide, animate, stop, callback, chaininng
+
+           
+            //hide paragraph
+            $('#btn').click(function(){
+                $('p').hide(1000); //1000 is 1 second delay
+            });
+
+            //show paragraph
+            $('.btnc').click(function(){
+                $('p').show(1000);
+            });
+
+            //mouseenter event + fade effect
+            $('p').mouseenter(function(){
+                $('p').fadeOut(1000);
+            });
+
+
+
+
+
+
+        });
+    </script>
+</body>
+</html>
