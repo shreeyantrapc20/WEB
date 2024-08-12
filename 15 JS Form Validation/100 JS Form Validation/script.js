@@ -8,9 +8,9 @@ function validateForm() {
     var gender = document.getElementsByName("gender");
     var ischecked = false;
     var course = document.getElementById("course").value;
-    var declare = document.getElementsByName("declaration");
-    var terms = document.getElementsByName("terms");
-    var isDecChecked = false, isTermsChecked = false;
+    var declare = document.getElementById("trueinfo");
+    var terms = document.getElementById("terms");
+   
 
     //checking if input fields are empty
 
@@ -67,23 +67,13 @@ function validateForm() {
         displayErrBox("Select a course.");
         return false;
     }
-    for( i = 0; i<declare.length; i++) {
-        if(declare[i].checked) {
-            isDecChecked = true;
-            break;
-        }
-    }
-    if(!isDecChecked) {
+   
+    if(!declare.checked) {
         displayErrBox("Accept that all informations are correct.");
         return false;
     }
-    for( i=0; i<terms.length; i++) {
-        if(terms[i].checked) {
-            isTermsChecked = true;
-            break;
-        }
-    }
-    if(!isTermsChecked) {
+   
+    if(!terms.checked) {
         displayErrBox("Accept the terms and conditions.");
         return false;
     }
