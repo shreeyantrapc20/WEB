@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE nepaliott SYSTEM "03XmlDtdElements.dtd">
+
+<!ELEMENT nepaliott (name, type, platform, journalist)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT platform (#PCDATA)>
+<!ELEMENT journalist (#PCDATA)>
+
+
+<nepaliott>
+    <type>Online</type>
+    <name>Hamro Khelkud</name>
+    <platform>Youtube, Website</platform>
+    <journalist>Subas Humagain</journalist>
+</nepaliott>
