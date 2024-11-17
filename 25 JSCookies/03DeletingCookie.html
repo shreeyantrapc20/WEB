@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Handling Cookies</title>
+</head>
+<body>
+    <button onclick="deleteCookie()">Delete Cookies</button>
+
+    <script>
+        function deleteCookie() {
+
+            //setting expiry date to past
+                var dt = new Date();
+                dt.setTime(dt.getTime()-(7*24*60*60*1000));
+                var expires = dt.toUTCString();
+
+                //updating cookie
+                document.cookie = "name="+""+"; expires="+expires+"; path=/";
+
+                document.write("Deleted cookie");
+            }
+    </script>
+</body>
+</html>

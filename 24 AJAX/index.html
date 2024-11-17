@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AJAX</title>
+</head>
+
+<body>
+    <form>
+        Start typing <input type="text" name="search" onkeyup="showSuggestions(this.value)" id="search">
+        <div id="suggestions"></div>
+
+        <script>
+            function showSuggestions(string) {
+
+                if (string.length == 0) {
+
+                    //if user has not begin typing or has cleared text box then dont show anything
+                    document.getElementById("suggestions").innerHTML = "";
+                    return;
+
+                } else {
+
+                    var XhttpReq = new XMLHttpRequest();
+
+                    XhttpReq.onreadystatechange = function () {
+
+                        //onreadystatechange handles different stages of request
+
+                        if (this.readyState == 4 && this.status == 200) {
+
+                            // check for readyState being 4 (DONE) to ensure that the request is complete, and then you handle the response data.
+
+                            // 200 (OK): The request was successful, and the server returned the requested resource.
+                            // 404 (Not Found): The requested resource could not be found on the server.
+                            // 500 (Internal Server Error): The server encountered an error while processing the request
+                            document.getElementById("suggestions").innerHTML = this.responseText;
+
+                            //ajax returns the output in responsetext property 
+                        }
+
+                    };
+
+                    XhttpReq.open("GET", "suggestions.php?q=" + string, true);
+                    XhttpReq.send();
+                }
+            }
+        </script>
+
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE note SYSTEM "02Library.dtd">
+<library>
+    <books>
+        <title> Book 1 </title>
+        <author> Author 1 </author>
+        <price> 2000 </price>
+    </books>
+
+     <books>
+        <title> Book 2 </title>
+        <author> Author 2 </author>
+        <price> 4000 </price>
+    </books>
+
+</library>

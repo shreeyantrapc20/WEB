@@ -13,6 +13,7 @@
         <th>DOB</th>
         <th>Phone</th>
         <th>Address</th>
+        <th colspan=2>Actions</th>
         </tr>";
 
         while($row = $result->fetch_assoc()) {
@@ -26,6 +27,7 @@
             <td>{$row['phone']}</td>
             <td>{$row['addr']}</td>
             <td><a href=' edit.php?id=".$row['sid']." '>Edit</a></td>
+            <td><a href=' delete.php?id=".$row['sid']." '>Delete</a></td>
             </tr>";
         }
         echo "</table>";

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#box").animate({height: "300px"});
+  });
+  $("#btn2").click(function(){
+    $("#box").animate({height: "100px"});
+  });
+
+$("#myid").mouseenter(function(){
+$("#myid").animate({right:"300px"}).animate({left:"500px"});
+});
+
+});
+</script>
+</head>
+<body>
+
+<button id="btn1">Animate height</button>
+<button id="btn2">Reset height</button>
+
+<div id="box" style="background:#98bf21;height:100px;width:100px;margin:6px;"></div>
+<div id="myid" style="position:absolute; height: 200px; width:200px; background-color: red;"></div>
+</body>
+</html>

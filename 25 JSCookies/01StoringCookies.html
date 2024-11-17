@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Handling Cookies</title>
+</head>
+<body>
+    <form name="myform">
+        <input type="text" placeholder="Enter your name" name="uname">
+        <input type="button" value="Set Cookie" onclick="setCookie()">
+    </form>
+
+    <script>
+        function setCookie() {
+
+            if(document.myform.uname.value == '') {
+
+                alert("Enter your name to set cookie");
+
+            } else {
+
+                //getting form data
+                var cookieValue = document.myform.uname.value;
+
+                //calculating expirry date as 7 days
+                var dt = new Date();
+                dt.setTime(dt.getTime()+(7*24*60*60*1000));
+                var expires = dt.toUTCString();
+
+                //setting cookie
+                document.cookie = "name="+cookieValue+"; expires="+expires+"; path=/";
+
+                document.write("Setting cookies: name="+cookieValue);
+            }
+        }
+    </script>
+</body>
+</html>

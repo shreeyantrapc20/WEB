@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Html semantic elements</title>
+        <meta name="description" content="This page contains semantic elements"/>
+    </head>
+    <style>
+        *{
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        aside{
+            width:300px;
+            float:right;
+            background-color: antiquewhite;
+            padding:10px;
+            text-align: justify;
+        }
+        aside h2{
+            text-align:center;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: aquamarine;
+            position: sticky;
+            top:0;
+            box-shadow: 0px 0px 5px 0px rgb(184, 183, 183);
+        }
+        footer{
+            background-color:cadetblue;
+        }
+    </style>
+    <body>
+        <nav>
+            <p>A nav element defines set of navigation links.</p>
+            <a href="#">Home</a>
+            <a  href="#">Contact</a>
+            <a href="#">About</a>
+        </nav>
+        <section>
+            <h1>Semantic Element</h1>
+            <p>Semantic elements are elements with meaning. The elements like div, span 
+                are non-semantic elements as they tells nothing about the content whereas the 
+                semantic elements clearly describes its meaning.
+            </p>
+            <p>The html semantic elements are:</p>
+            <ol type="1">
+                <li>&lt;article&gt;</li>
+                <li>&lt;aside&gt;</li>
+                <li>&lt;details&gt;</li>
+                <li>&lt;figcaption&gt;</li>
+                <li>&lt;figure&gt;</li>
+                <li>&lt;footer&gt;</li>
+                <li>&lt;header&gt;</li>
+                <li>&lt;main&gt;</li>
+                <li>&lt;mark&gt;</li>
+                <li>&lt;nav&gt;</li>
+                <li>&lt;section&gt;</li>
+                <li>&lt;summary&gt;</li>
+                <li>&lt;time&gt;</li>
+            </ol>
+        </section>
+        <main>
+            <h2>Main Element</h2>
+            <p>The main element defines the main content of a document. The content inside a main element must be unique throught a document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logo, and search forms. There must not be more than one main element. Main element must not be a descendent of an article, aside, footer, header, or nav element.</p>
+        </main>
+        <section>
+            <h2>Section Element</h2>
+            <p>The &lt;section&gt; element is used to define the section in an html document. A section is a thematic grouping of content, typically with heading. The section elements can be used in following places:</p>
+            <ul>
+                <li>Chapters</li>
+                <li>Introductions</li>
+                <li>News Items</li>
+                <li>Contact Information</li>
+            </ul>
+            <p>A web page could normally be split into sections for Introduction, content and contact information.</p>
+        </section>
+
+        <article>
+            <h2>Article Element</h2>
+            <p>The article element is an independent, self-contained content. An article should make sense on its own. Examples where the articles elment can be used:</p>
+            <ul>
+                <li>Forum Posts</li>
+                <li>Blog Posts</li>
+                <li>User Comments</li>
+                <li>Product Cards</li>
+                <li>Newspaper Article</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Can we nest &lt;section&gt; and &lt;article&gt;?</h3>
+            <p>Yes, we can nest them within each other. This flexibility allows to create complex and structured content.</p>
+        </article>
+        <aside>
+            <h2>Aside Element</h2>
+            <p>A aside element defines some content aside from the content it is placed in (like sidebar). A aside content should be indirectly related to the surrounding content.</p>
+        </aside>
+        <article>
+            <header>
+                <h2>Header Element</h2>
+                <p>The header element is a container for introductory content or set of navigation links.</p>
+            </header>
+            <p>A header element typically consists:</p>
+            <ul>
+                <li>one or more heading elements like &lt;h1&gt;-&lt;h6&gt;</li>
+                <li>logo or icon</li>
+                <li>authorship information</li>
+            </ul>
+            <p>We can have several header elments in one html document. However, header cannot be placed within a footer, address or another header element.</p>
+        </article>
+        <article>
+            <header>
+                <h2>Figure and Figcaption Element</h2>
+            </header>
+            <p>The figure tag specifies self-contained content, like photo, diagrams etc. The figcaption tag defines a caption for figure element.</p>
+            <figure>
+                <img src="https://picsum.photos/200">
+                <figcaption>This image is provided by
+                    <code>https://picsum.photos/200</code>
+                </figcaption>
+            </figure>
+        </article>
+        <footer>
+            <h2>Footer Element</h2>
+            <p>Footer defines a footer of a document or section. A footer element typically contains: </p>
+            <ul>
+                <li>Authorship Information</li>
+                <li>&copy;Copyright Information</li>
+                <li>&phone;Contact Information</li>
+                <li>Sitemaps</li>
+                <li>Back to top links</li>
+                <li>Related Documents</li>
+            </ul>
+            <p>We can have several footer element in a document.</p>
+        </footer>
+
+        <footer>
+            <p>This is another footer element that contains mail-to link.</p>
+            <p><a href="mailto:binayak0128@gmail.com">Email Me</a></p>
+        </footer>
+    </body>
+</html>
